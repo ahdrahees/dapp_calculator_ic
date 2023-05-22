@@ -154,7 +154,7 @@ document.querySelector("form").addEventListener("submit", async (event) => {
         result = "Invalid operation";
     }
 
-    if (isNaN(result)) {
+    if (isNaN(result) || typeof result === "bigint") {
       document.getElementById("output").textContent = "Not a number";
     } else {
       document.getElementById("output").textContent = result;
