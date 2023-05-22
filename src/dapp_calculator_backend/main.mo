@@ -49,11 +49,10 @@ actor Calculator {
     };
     
     // Step 10 - Implement floor 
-    public func floor(num1 : Float) : async Int {
+    public func floor(num1 : Float) : async Float {
       
       let result = Float.floor(num1) ; // return integer value <= counter but the type is still float
-      return Float.toInt(result); // this just return integer part without decimals . here type is interger
-        
+      return result;
     };
 
     public func factorial(num1: Float): async Float {
